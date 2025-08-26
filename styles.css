@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.anime-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.anime-detail-card {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.anime-detail-img {
+    height: 100%;
+    object-fit: cover;
+}

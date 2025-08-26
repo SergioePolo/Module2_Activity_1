@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime Lists</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="./scripts.js"></script>
+        crossorigin="anonymous">
+    <script src="./scripts.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <button onclick="getRecommendations()">API CALL</button>
-    <button onclick="getAnimeById(45)">ANIME CALL</button>
-    <header>
-
+    <header class="p-3 bg-light text-dark">
+        <div>
+            <h1 class="h2">Anime Lists</h1>
+        </div>
     </header>
 
-    <main>
-        <section id="card_Container"></section>
-        <section id="anime_Card"></section>
+    <main class="container my-4">
+
+        <section id="recommendationsSection">
+            <div id="card_Container" class="row g-3 justify-content-center"></div>
+            <div class="text-center my-3">
+                <button id="loadMoreBtn" class="btn btn-primary d-none" onclick="loadMore()">Cargar más</button>
+            </div>
+        </section>
+
+        <section id="animeDetailSection" class="d-none mt-4"></section>
     </main>
 
-    <footer>
-
+    <footer class="p-3 bg-secondary text-center">
+        <small>Anime Lists © 2025</small>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
 </body>
 
